@@ -7,8 +7,8 @@ public class PasswordValidator {
      * WEAK ตือพาสเวิร์ดที่เดาได้ง่าย , MEDIUM คือพาสเวิร์ดที่ความยากปานกลาง , STRONG คือพาสเวิร์ดที่เดาได้ยาก
      * โดยความยากง่ายจะพิจารณาจากส่วนประกอบว่ามีตัวอักษรพิมใหญ่ พิมเล็ก ตัวเลข หรืออักษรพิเศษหรือไม่
      * @param การรับ string และ integer ที่ผู้ใช้งานนำมาตั้งพาสเวิร์ด
-     * @return การส่งกลับ enum ชื่อ PasswordStrength เพื่อบอกว่าพาสเวิร์ดที่ผู้ใช้งานส่งมาว่าสามารถตั้งได้มั้ย ถ้าตั้งไม่ได้ 
-     * ส่งกลับ INVALID ถ้าตั้งได้จะส่งกลับ WEAK,MEDIUM,STRONG
+     * @return การส่งกลับ enum ชื่อ PasswordStrength เพื่อบอกว่าพาสเวิร์ดที่ผู้ใช้งานส่งมาว่าสามารถตั้งได้มั้ย 
+     * ถ้าตั้งไม่ได้ส่งกลับ INVALID ถ้าตั้งได้จะส่งกลับ WEAK,MEDIUM,STRONG
      */
     public static PasswordStrength validate(String password) { 
         
@@ -55,6 +55,7 @@ public class PasswordValidator {
     }
 
 }
+
 
 
 
