@@ -9,9 +9,8 @@ public class PasswordValidator {
      * @param การรับ string และ integer ที่ผู้ใช้งานนำมาตั้งรหัส
      * @return การส่งกลับ Password ที่ผู้ใช้งานส่งมาว่าสามารถตั้งได้มั้ย ถ้าตั้งไม่ได้ส่งกลับ INVALID ถ้าตั้งได้จะส่งกลับ WEAK,MEDIUM,STRONG
      */
-    public static PasswordStrength validate(String password) { // Function Type ให้เป็น PasswordStrength 
+    public static PasswordStrength validate(String password) { 
         
-
         if(password==null || password.length()<8)
             return PasswordStrength.INVALID ;
         
@@ -55,3 +54,4 @@ public class PasswordValidator {
     }
 
 }
+
