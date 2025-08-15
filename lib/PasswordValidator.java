@@ -9,7 +9,6 @@ public class PasswordValidator {
      * @param การรับ string และ integer ที่ผู้ใช้งานนำมาตั้งรหัส
      * @return การส่งกลับ Password ที่ผู้ใช้งานส่งมาว่าสามารถตั้งได้มั้ย ถ้าตั้งไม่ได้ส่งกลับ INVALID ถ้าตั้งได้จะส่งกลับ WEAK,MEDIUM,STRONG
      */
-    // TODO: แก้ไข return type ของเมธอดนี้ให้ถูกต้อง
     public static PasswordStrength validate(String password) { // Function Type ให้เป็น PasswordStrength 
         
 
@@ -54,4 +53,5 @@ public class PasswordValidator {
 
         
     }
+
 }
